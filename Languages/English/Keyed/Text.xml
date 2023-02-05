@@ -1,4 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-	<CP_ImprisonInPlace>Arrest here</CP_ImprisonInPlace>
+	<CP_ImprisonInPlace>Arrest {0} here</CP_ImprisonInPlace>
 </LanguageData>
