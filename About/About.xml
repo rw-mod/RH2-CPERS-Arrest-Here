@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>[RH2] CPERS: Arrest Here!</name>
+	<name>[RH2] CPERS: Arrest Here! (Fork)</name>
 	<author>Chicken Plucker, Taranchuk, b0unt9</author>
 	<supportedVersions>
 		<li>1.2</li>
@@ -18,5 +18,54 @@
 			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
 		</li>
 	</modDependencies>
-	<description></description>
+	<description>
+[h1][RH2] CPERS: Arrest Here! (1.6 Update)[/h1]
+This is a [b]reimplementation[/b] of the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2563157350]original "[RH2] CPERS: Arrest Here!" mod[/url] for RimWorld, updated to support [b]version 1.6[/b].
+
+In RimWorld 1.5, the original mod added a Float Menu option via [b]Harmony patching[/b].
+However, as of RimWorld 1.6, this functionality can now be added using the [b]native `[u]FloatMenuOptionProvider[/u]` system[/b], which this mod takes full advantage of.
+[hr][/hr]
+
+[h2]✅ Features[/h2]
+[list]
+[*] Adds a [b]Arrest Here[/b] Float Menu option when right-clicking on downed pawns.
+[/list]
+[hr][/hr]
+
+[h2]📦 Differences from the Original Mod[/h2]
+[list]
+[*] The Float Menu is built using RimWorld 1.6's [b]native modding API[/b], not the Harmony Patch.
+[*] Refactored and cleaned up logic for better compatibility with the new FloatMenu system.
+[*] Fully compatible with other FloatMenuOptionProviders in 1.6.
+[/list]
+[hr][/hr]
+
+[h2]📌 Notes[/h2]
+[list]
+[*] This is [b]not an official update[/b] by the original author.
+[*] This version was rebuilt by reviewing and understanding the original mod’s functionality, then adapting it using new 1.6 tools.
+[*] The mod should be safe to use in existing saves, but always back up your game just in case.
+[/list]
+[hr][/hr]
+
+[h2]📜 Credits[/h2]
+[list]
+[*] Original mod by [b][url=https://steamcommunity.com/id/chickenplcker/]Chicken Plucker[/url][/b] ([url=https://steamcommunity.com/sharedfiles/filedetails/?id=2563157350]Workshop page[/url])
+[*] 1.6 update and native FloatMenu integration by [b][url=https://github.com/b0unt9]Bounty[/url][/b]
+[/list]
+[hr][/hr]
+
+[h2]🔧 Compatibility[/h2]
+[list]
+[*] RimWorld 1.2+
+[*] Incompatible with the original mod (disable one or the other)
+[*] Compatible with most other mods unless they interfere with inventory or FloatMenu logic
+[/list]
+[hr][/hr]
+
+[h2]💬 Feedback[/h2]
+Issues or suggestions?
+Feel free to leave a comment or contact me via GitHub: [url=https://github.com/rw-mod/RH2-CPERS-Arrest-Here]github.com/rw-mod/RH2-CPERS-Arrest-Here[/url]
+[hr][/hr]
+	</description>
 </ModMetaData>
