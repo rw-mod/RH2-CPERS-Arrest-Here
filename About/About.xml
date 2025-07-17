@@ -9,6 +9,14 @@
 	<li>1.2</li>
 	</supportedVersions>
 	<packageId>RH2.CPERS.Arrest.Here</packageId>
+	<modDependencies>
+        <li>
+            <packageId>brrainz.harmony</packageId>
+            <displayName>Harmony</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+            <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+        </li>
+    </modDependencies>
 	<description>Save precious time and arrest a downed prisoner without the need of a room!
 
 "Arrest here" allows you to turn downed pawns into prisoners without having to quickly build a prison during raids or defense where a prison room isn't readily available.
