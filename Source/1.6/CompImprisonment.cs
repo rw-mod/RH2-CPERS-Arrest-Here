@@ -1,31 +1,34 @@
-﻿using HarmonyLib;
-using RimWorld;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnityEngine;
-using Verse;
-using Verse.AI;
+﻿using Verse;
 
-namespace CapturedPersons
+namespace CapturedPersons;
+
+public class CompProperties_Imprisonment : CompProperties
 {
-    public class CompProperties_Imprisonment : CompProperties
+    public CompProperties_Imprisonment()
     {
-        public CompProperties_Imprisonment()
-        {
-            this.compClass = typeof(CompImprisonment);
-        }
+        compClass = typeof(CompImprisonment);
     }
+}
 
-    public class CompImprisonment : ThingComp
+public class CompImprisonment : ThingComp
+{
+    public int LastTryingEscapeTick;
+    public override void PostExposeData()
     {
-        public int lastTryingEscapeTick;
-        public override void PostExposeData()
+        base.PostExposeData();
+        Scribe_Values.Look(ref LastTryingEscapeTick, "lastTryingEscapeTick");
+    }
+}
+
+[StaticConstructorOnStartup]
+public static class CompPropertiesPatch
+{
+    static CompPropertiesPatch()
+    {
+        foreach (ThingDef thingDef in DefDatabase<ThingDef>.AllDefs)
         {
-            base.PostExposeData();
-            Scribe_Values.Look(ref lastTryingEscapeTick, "lastTryingEscapeTick");
+            if (thingDef.race is { Humanlike: false }) continue;
+            thingDef.comps.Add(new CompProperties_Imprisonment());
         }
     }
 }

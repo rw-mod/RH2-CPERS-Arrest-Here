@@ -36,6 +36,7 @@
   <ItemGroup>
     <Compile Include="CP_DefOf.cs" />
     <Compile Include="CompImprisonment.cs" />
+    <Compile Include="FloatMenuOptionProvider_ArrestHere.cs" />
     <Compile Include="JobDriver_ImprisonInPlace.cs" />
     <Compile Include="HarmonyPatches.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
